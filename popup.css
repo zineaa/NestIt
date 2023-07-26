@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  min-width: 400px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+input {
+  width: 100%;   
+  padding: 10px; /* left-right-top-bottom) */     
+  border-color: orange;
+  border-width: thin;
+  box-sizing: border-box; /* text field goes past rhs of window due to padding (extra = 10px + 10px)  */   
+  margin: 10px;
+}
+
+#input-el {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  color: grey;
+}
+
+button {
+  padding: 10px 20px; /* (left-right)  (top-bottom) */
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  width: 125px;
+  height: 25px;
+  font-size: 10px;
+}
+
+ul {
+  margin-top: 20px;
+  list-style: none;
+  padding-left: 10px;
+}
+
+li a {              /* style only "a" in "li" i.e. anchor tags only inside list items, and not all anchor tags*/
+  margin-top: 5px;
+}
+
+a {
+  color: orange;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  color: grey;
+  margin-left: 10px;
+  margin-top: 0px;
+}
+
+
+.container {
+  width: 280px;
+  color: #314d3e;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.textbox {
+  width: 100%;
+  font-size: 12px;
+  margin: 0;
+  padding: 0px 2px;
+}
+
+.textbox:focus {
+  outline: 0;
+  border-color: #66afe9;
+}
+
+.bookmarks {
+  margin: 5px 5px;
+  padding: 3px;
+}
+
+.bookmark {
+  display: flex;
+  border-bottom-color: #00254d;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-radius: 0.8rem;
+  padding: 3px;
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+}
+
+.bookmark-title {
+  padding-left: 2px;
+}
+
+.bookmark-controls img {
+  margin: 0 4px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+.bookmark-controls {
+  flex: auto;
+  text-align: right;
+}

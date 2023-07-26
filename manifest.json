@@ -1,0 +1,33 @@
+{
+  "name": "NestIt",
+  "version": "0.1.0",
+  "description": "Streamline Your Online Experience with Our Chrome Extension: Your One-Stop Solution for Storing Links, Data, and Bookmarks Within YouTube Videos",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://*.youtube.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [ 
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/bookmark.png",
+        "assets/play.png",
+        "assets/delete.png",
+        "assets/icon.png"
+      ],
+      "matches": ["https://*.youtube.com/*"]
+    }
+  ],
+  "action": {
+    "default_title": "NestIt",
+    "default_popup": "popup.html",
+    "default_icon": "assets/icon.png"
+  },
+  "manifest_version": 3
+}
